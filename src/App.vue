@@ -34,7 +34,8 @@ export default {
       </ul>
     </section>
     <a id="tribute-link" href="https://es.wikipedia.org/wiki/Anexo:Episodios_de_Sailor_Moon#Sailor_Moon_S_(090-127)"
-      target="_blank">Fuente: Wikipedia, episodios de Sailor Moon</a> </main>
+      target="_blank">Fuente: Wikipedia, episodios de Sailor Moon</a>
+  </main>
 
 </template>
 
