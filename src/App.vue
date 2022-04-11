@@ -1,10 +1,13 @@
 <script setup>
 
 import heroImage from './assets/sailor-moon.jpg'
+import timeline from './assets/timeline.json';
 
 </script>
 
 <script>
+
+
 export default {
 
 }
@@ -21,16 +24,9 @@ export default {
     <section>
       <h3 id="tribute-info">Cronología de las temporadas de Guerrera Luna</h3>
       <ul>
-        <li><span class="item-year">1992</span> Se estrena Sailor Moon. Una niña torpe y miedosa cambia su vida de forma
-          radical cuando se
-          encuentra con una gata parlante llamada <em>Luna</em></li>
-        <li><span class="item-year">1993</span> Han pasado 2 meses desde el final de la batalla contra el Reino Oscuro.
-          Las 5 chicas, y Mamoru (Tuxido Mask), que resucitaron gracias al milagroso poder del Cristal de Plata viven
-          ahora como cualquier joven sin ningún recuerdo de todo lo que les ocurrió. Usagi (Serena) sigue siendo alegre
-          y torpe, y Mamoru (Darien) sigue burlándose de ella. </li>
-        <li><span class="item-year">1994</span> Las chicas tienen problemas con los estudios pues se acerca el momento
-          de dar su examen de admisión a la preparatoria. Rei se encuentra preocupada debido a una pesadilla recurrente
-          en que ve cómo todo, incluyendo las Sailors, es destruido por completo. </li>
+        <li v-for="item in timeline" :key="item.id"> <span class="item-year">{{ item.year }} </span> <span
+            v-html="item.text"></span>
+        </li>
       </ul>
     </section>
     <a id="tribute-link" href="https://es.wikipedia.org/wiki/Anexo:Episodios_de_Sailor_Moon#Sailor_Moon_S_(090-127)"
