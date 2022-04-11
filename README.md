@@ -25,7 +25,7 @@ Idealmente, tu página de tributo debería tener:
 
 ## Iteración 2a
 
-1. Usa la directiva v-for para crear tantos <li> como acontecimientos ocurren en tu págian de tributo. Puedes crear directamente un array de objetos en App.vue, o mejor, crea un fichero en formato JSON siguiendo la estrategia de [Lab Ironhack Contacts](https://github.com/omiras/lab-vue-ironcontacts/blob/main/src/App.vue)
+1. Usa la directiva v-for para crear tantos \<li> como acontecimientos ocurren en tu págian de tributo. Puedes crear directamente un array de objetos en App.vue, o mejor, crea un fichero en formato JSON siguiendo la estrategia de [Lab Ironhack Contacts](https://github.com/omiras/lab-vue-ironcontacts/blob/main/src/App.vue)
 2. Recuerda añadir un identificador ficticio a cada objeto (un campo **id**). Será necesario para el v-for.
 
 ## Iteración 2b
