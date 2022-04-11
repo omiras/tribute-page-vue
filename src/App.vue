@@ -1,21 +1,17 @@
 <script setup>
 
 import heroImage from './assets/sailor-moon.jpg'
+
+// Iteración 2a: Opción 1: Crear un Json y cargarlo. Podemos iterarlo directamente en el v-for
 import timeline from './assets/timeline.json';
 
 </script>
 
-<script>
 
-
-export default {
-
-}
-</script>
 
 <template>
   <main id="main">
-    <h1 id="title">Sailor Moon</h1>
+    <h1 id="title">Sailor Moon </h1>
     <h2>¡Te castigaré en nombre de la justicia y el amor!</h2>
     <figure id="img-div">
       <img id="image" :src="heroImage" alt="5 sailor moon">
