@@ -1,30 +1,36 @@
 <script setup>
-
+// Aprovechamos la versatilidad de la Composition API para poder importar recursos sin tenerlos que 'pasar' al data(). 
 import heroImage from './assets/sailor-moon.jpg'
-
 // Iteración 2a: Opción 1: Crear un Json y cargarlo. Podemos iterarlo directamente en el v-for
 import timeline from './assets/timeline.json';
-
+import ImageComponent from './ImageComponent.vue';
+import CronoList from './CronoList.vue';
 </script>
 
+<script>
+
+// Iteración 2a. Opción 2: usar el data() para exponer una propiedad del estado con el timeline cargado desde timeline.json, igual que se hacía en Ironhack labs
+
+</script>
 
 
 <template>
   <main id="main">
     <h1 id="title">Sailor Moon </h1>
     <h2>¡Te castigaré en nombre de la justicia y el amor!</h2>
-    <figure id="img-div">
-      <img id="image" :src="heroImage" alt="5 sailor moon">
-      <figcaption id="img-caption">Las 5 guerreras</figcaption>
-    </figure>
+    <!-- TODO: Transformar en componente -->
+    <image-component legend="Las 5 guerreras originales" :image="heroImage" />
+    <!-- Fin componente -->
     <section>
-      <h3 id="tribute-info">Cronología de las temporadas de Guerrera Luna</h3>
-      <ul>
-        <li v-for="item in timeline" :key="item.id"> <span class="item-year">{{ item.year }} </span> <span
-            v-html="item.text"></span>
-        </li>
-      </ul>
+      <!-- <h3 id="tribute-info">Cronología de las temporadas de Guerrera Luna</h3> -->
+      <!-- TODO: Transformar en componente -->
+      <crono-list :items="timeline" />
+      <!-- Fin componente -->
+
     </section>
+    <image-component legend="Bunny Tsukino i l'enmascarat"
+      image="https://i.pinimg.com/originals/37/9d/ad/379daddcbf482cc881f712bd7dca4623.jpg" />
+
     <a id="tribute-link" href="https://es.wikipedia.org/wiki/Anexo:Episodios_de_Sailor_Moon#Sailor_Moon_S_(090-127)"
       target="_blank">Fuente: Wikipedia, episodios de Sailor Moon</a>
   </main>
@@ -65,16 +71,6 @@ figcaption {
 
 header {
   line-height: 1.5;
-}
-
-.item-year {
-  font-weight: bold;
-}
-
-.item-year::after {
-  content: ':';
-  font-weight: bold;
-
 }
 
 .logo {

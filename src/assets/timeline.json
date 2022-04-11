@@ -2,11 +2,13 @@
   {
     "id": 1,
     "year": 1992,
-    "text": "Se estrena Sailor Moon. Una niña torpe y miedosa cambia su vida de forma radical cuando se encuentra con una gata parlante llamada <em>Luna</em>"
+    "text": "Se estrena Sailor Moon. Una niña torpe y miedosa cambia su vida de forma radical cuando se encuentra con una gata parlante llamada <em>Luna</em>",
+    "isImportant": false
   },
   {
     "id": 2,
     "year": 1993,
-    "text": "Aparece una nueva y misteriosa guerrera rosa que se hace llamar Chibi-Usa."
+    "text": "Aparece una nueva y misteriosa guerrera rosa que se hace llamar Chibi-Usa!",
+    "isImportant": true
   }
 ]
